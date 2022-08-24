@@ -31,5 +31,32 @@ Here are some ideas to get you started:
 - 📫 
 - 😄 
 - ⚡ 
-
+function solution(new_id) {
+    var answer = '';
+    new_id = new_id.toLowerCase();
+    new_id = new_id.replace(/[`~!@#$%^&*()|+\=?;:'",<>\{\}\[\]\\\/]/gi, '');
+    new_id = new_id.replace('..', '.');
+    if(new_id.slice(0,1) == '.'){
+        new_id = new_id.substr(1, new_id.length);
+    }
+    if(new_id.slice(0,-1) == '.'){
+        new_id = new_id.substr(0, new_id.length-1);
+    }
+    if(new_id === ''){
+        new_id = a;
+    }
+    if(new_id.length >= 16){
+        new_id = new_id.substr(0, 15);
+        if(new_id.slice(0,-1) == '.'){
+            new_id = new_id.substr(0, new_id.length-1);
+        }
+    }
+    if(new_id <= 2){
+        var endChar = new_id.slice(0,-1);
+        for(new_id.length ; new_id.length <= 3; new_id += endChar);
+    }
+    
+    answer = new_id;
+    return answer;
+}
 -->
