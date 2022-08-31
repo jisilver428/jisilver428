@@ -58,5 +58,5 @@ function solution(new_id) {
     
     answer = new_id;
     return answer;
-}
+}프로그래머스 아이디만들기 
 -->
