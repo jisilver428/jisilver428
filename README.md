@@ -31,6 +31,9 @@ Here are some ideas to get you started:
 - 📫 
 - 😄 
 - ⚡ 
+
+
+
 function solution(new_id) {
     var answer = '';
     new_id = new_id.toLowerCase();
